@@ -1,0 +1,90 @@
+/*BELAJAR CSS FONT STYLE*/
+
+/*Berikut adalah property yang dimiliki oleh CSS untuk mengatur font style. Yaitu:
+	1. font-family 	= berfungsi untuk mengatur jenis font yang akan digunakan
+	2. font-size 	= mengatur ukuran font yang akan digunakan
+	3. font-weight: = mengatur ketebalan font
+	4. font-variant = mengubah font menjadi small caps
+	5. font-style 	= mengubah font menjadi bercetak miring
+	6. line-height 	= mengatur spasi antar baris */
+
+
+/*FONT FAMILY*/
+/*font-family bisa memiliki 2 buah value. Yaitu "nama font" dan "generic family". Seperti yang terlihat pada syntax dibawah, 
+font family memiliki 2 buah value yaitu "arial*, "verdana", dan "sans-serif". itu artinya, sebuah web jika dijalankan 
+pada sebuah web browser akan mencari type font arial erlebih dahulu, jika tidak ada, dia akan mencari type font verdana
+dan jika tidak ada juga, dia akan mencari keluarga font sans-serif (font tanpa kaki) sedangkan kebalikan dari sans-serif
+adalah serif. Jadi anda harus belajar tentang jenis jenis font yang masuk dalam keluarga sans-serif dan keluarga serif*/
+
+
+/*FONT SIZE*/
+/*font-size memiliki beberapa buah value yaitu :
+	1. px (pixel) 
+	2. % (akan dipelajari di materi selanjutnya)
+	3. em (akan dipelajari di materi selanjutnya)*/
+
+
+/*FONT WEIGHT*/
+/*font-weight memiliki beberapa buah value yaitu:
+	1. lighter
+	2. normal
+	3. 100-900
+	4. bold
+	5. bolder
+kelima value diatas akan memberi efek ketebalan yang berbeda. Silahkan anda coba coba sendiri*/
+
+
+/*FONT VARIANT*/
+/*Mengubah sebuah tulisan menjadi small caps. Small caps adalah mengubah sebuah huruf yang tadinya huruf
+capita, akan menjadi lebih besar lagi ukurannya, dan yang tadinya huruf kecil akan dirubah menjadi huruf capital
+font-variant memiliki 2 buah value yaitu:
+	1. normal (default)
+	2. small-caps*/
+
+
+/*FONT STYLE*/
+/*Memiliki 3 buah value yaitu:
+	1. normal (default)
+	2. italic 	= membuat font menjadi miring dengan cara menggantinya dengan jenis family font yang miring
+	2. oblique	= membuat font miring dengan cara memiringkan huruf font beberapa derajat dengan cara paksa*/
+
+
+/*LINE HEIGHT*/
+/*Memiliki 3 buah value yaitu :
+	1. px (pixel)
+	2. normal (default)
+	3. em*/
+
+
+/*Contoh Syntax*/
+
+h1 {
+	font-family: arial, verdana, sans-serif;
+	font-size: 100px;
+	font-weight: lighter;
+	font-variant: normal;
+	font-style: normal;
+}
+
+
+h2 {
+	font-family: times new roman;
+	font-size: 30px;
+	font-weight: normal;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+
+p {
+	font-family: georgia, serif;
+	font-size: 20px;
+	font-weight: bolder;
+	font-style: oblique;
+	line-height: 40px;
+}
+
+
+
+/* Selain cara diatas, untuk memudahkan anda membuat property CSS yang banyak, bisa dilakukan dengan 
+teknik CSS ShortHand. Untuk lebih jelasnya, bisa lihat gambar yang akan di hyperlinkkan pada file Font_Style.html*/

@@ -1,0 +1,100 @@
+/*SELECTOR*/
+/*selector adalah komponen pada CSS yang berfungsi untuk mengenali elemen html yang akan diberi style
+selector bisa deibuat dengan 4 cara. Yaitu:
+	1. Elemen html 			= yaitu dengan menggunakan elemen html seperti : h1, h2, p, li, a, dll
+	2. id 					= menggunakan id
+	3. class 				= menggunakan class
+	4. complex selector 	= akan dibahas di materi yang akan datang; */
+
+
+/*ELEMEN HTML*/
+/*Brikut adalah contoh selector menggunakan elemen html*/
+
+body{
+	font-family: arial;
+}
+
+/*dengan menggunakan selector dari elemen html seperti diatas, maka semua elemen yang ada pada elemen body akan 
+menggunakan style font family yang sama*/
+
+/*contoh penggunaan yang lain*/
+/*dalam suatu waktu ketika kita ingin mengubah warna h1 dan h2 menjadi sama sama hijau (berwarna sama), kita
+tidak perlu menulis kan 2 syntax untuk masing masing elemen. Kita bisa menggabungkannya seperti syntax dibawah 
+ini : */
+
+h1, h2{
+	color: Green;
+}
+/*syntax h1, h2 bisa diartikan elemen h1 dan elemen h2 */
+
+
+/*dalam suatu kasus, ketika saya ingin mengubah list yang bagian atas menjadi warna merah (berbeda dengan list 
+bagian bawah, saya menggunakan syntax dibawah ini*/
+
+ul li{
+	color: Red;
+}
+
+
+ol li{
+	color: Orange;
+}
+/*syntax ul li bisa diartikan rubah warna li yang ada di dalam ul*/
+/*syntax oli li bisa diartikan rubah warna li yang ada dalam ol*/
+
+
+
+
+
+
+/*ID dan CLASS*/
+/*ketika kita ingin merubah style 2 buah paragraf menjadi berbeda satu sama lain, kita tidak bisa menggunakan
+selector dari elemen html. dalam hal ini adalah electer p. Karena jika kita menggunakan selector p, yang terjadi adalah 
+kedua paragraf akan memiliki style yang sama. Untuk mengatasi itu, kita diharuskan membuat selector sendiri
+menggunakan id dan bisa juga menggunakan class. Caranya , buatlah id atau class pada paragraf, dan gunakan nama id
+atau nama class tadi sebagai selector. untuk penulisan css nya, lihat syntax dibawah*/
+
+#paragraft1{
+	color: Blue;
+}
+/*jika menggunakan id, maka penulisan syntax selector harus diawali tanda kres (#)*/
+
+
+.paragraft2{
+	color: Brown;
+}
+/*sedangkan untuk class, penulisan syntax selector harus diawali tanda titik (.)*/
+
+/*walaupun memiliki efek yang sama, id dan class memiliki beberapa perbedaan. yaitu:
+perbedaan ID dan CLASS
+	1. sebuah elemen html hanya boleh memiliki satu id
+	2. setiap halaman hanya boleh memiliki satu elemen dengan id tersebut
+	3. id dapat digunakan sebagai penanda halaman untuk suatu link
+	4. id digunakan untuk javascript
+	5. id sebaiknya tidak digunakan untuk CSS (untuk CSS, lebih baik gunakan class)*/
+
+/*Contoh keuntungan menggunakan class. Perhatikan h3 dan paragraf ke tiga(paling bawah)*/
+
+.paragraft3{
+	color: LightBlue;
+}
+
+
+.tulisan3{
+	font-size: 30px;
+}
+/*untuk style paragraf 3, warna akan berubah menjadi lightblue karena class paragraft3, dan font size akan berubah
+menjadi 30 px karena class tulisan3*/
+
+/*lihatlah pada browser. karena nama class "tulisan3" digunakan oleh elemen h3 dan p (paragraft3), maka
+tulisan pada elemen h3 dan p (paragraft3) juga akan berubah stylenya*/
+
+/*Jika banyak elemen html memiliki sebuah nama class yang sama, maka untuk mengatur style salah satu elemen html
+kita bisa menggunakan syntax dibawah:*/
+
+h3.tulisan3{
+	text-decoration: line-through;
+}
+/*syntax diatas bermaksud akan memberikan line-through pada h3 yang memmiliki nama class tulisan3*/
+
+/*SELESAI*/

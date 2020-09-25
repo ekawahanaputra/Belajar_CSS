@@ -1,0 +1,100 @@
+/*Belajar CSS Text Style*/
+
+/*Text Style memiliki beberapa property yaitu:
+	1. color 			= Untuk memberi warna pada teks
+	2. text-align		= Mengatur format paragraf / teks
+	3. text-indent 		= Memberi identasi pada pragraf / teks
+	4. text-decoration 	= Mengatur dekorasi pada teks
+	5. text-transform 	= Mengubah jenis huruf menjadi huruf kecil, besar / capital 
+	6. letter-spacing 	= Mengatur spasi antar huruf
+	7. word-spacing 	= mengatur spasi antar kata */
+
+
+/*COLOR atau WARNA*/
+/*ada beberapa macam tipe warna yang bisa kita berikan. Diantaranya:
+	1. nama warna seperti : Red, Blue, RoyalBlue, Green, dll
+
+	2. hexadecimal 		  : #ff0000, #20b2aa, #4169el (merupakan kode warna dengan 6 huruf/angka dan diawali dengan tanda #(kress))
+	   cara membaca kode hexadecimal adalah bilangan terendah adalah '0' dan bilangan yang tertinggi adalah 'f'. kombinasi
+	   6 kode hexadecimal inilah yang akan membentuk warna. Jika kita tulis kode #000000 akan menghasilkan warna hitam. Dan
+	   jika kita tulis #ffffff akan menghasilkan warna putih
+
+	3. rgb 				  : rgb(255, 0, 0),  rgb(32, 178, 170),  rgb(65, 105, 255). rgb merupakan paduan warna red green blue*/
+
+
+
+/*TEXT-ALIGN*/
+/*text-align juga memiliki beberapa value yaitu:
+	1. left 	= rata kiri
+	2. right 	= rata kanan
+	3. center 	= rata tengah
+	4. justify 	= rata kanan kiri*/
+
+
+/*TEXT-INDENT*/
+/*text-indent memiliki 2 buah satuan yaitu:
+	1. px (pixel)
+	2. % (persentase) - dipelajari next time*/
+
+
+
+/*TEXT-DECORATION*/
+/*text-decoration memiliki 4 parameter yaitu:
+	1. none (default) 	= menghilangkan garis bawah
+	2. underline 		= membuat garis dibawah tulisan
+	3. overline 		= membuat garis diatas tulisan
+	4. line-through 	= membuat garis yang seakan akan mencoret tulisan*/
+
+
+
+/*TEXT-TRANSFORM*/
+/*text-transform memiliki beberapa pilihan parameter. Yaitu:
+	1. none (default)
+	2. lowercase 	= membuat semua huruf menjadi huruf kecil semua
+	3. uppercase 	= membuat semua huruf menjadi huruf besar semua
+	4. capitalize 	= membuat huruf capital pada huruf pertama saja*/
+
+
+
+/*LETTER-SPACING*/
+/*letter-spacing memiliki 2 pilihan satuan. Yaitu:
+	1. normal
+	2. px (pixel)*/
+
+
+/*WORD-SPACING*/
+/*word-spacing memiliki 2 pilihan satuan. Yaitu:
+	1. normal
+	2. px (pixel)*/
+
+	/*Contoh cara penggunaannya bisa dilihat dibawah*/ 
+
+
+	h1{
+		color: Grey;
+		text-transform: lowercase;
+	}
+
+
+
+	h2{
+		color: #a1d0e9;
+		text-transform: uppercase;
+		word-spacing: 100px;
+	}
+
+
+
+	h3{
+		text-decoration: line-through;
+	}
+
+
+
+	p{
+		color: rgb(100, 150, 50);
+		text-align: justify;
+		text-indent: 100px;
+		text-transform: capitalize;
+		letter-spacing: 10px;
+	}

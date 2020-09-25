@@ -1,0 +1,67 @@
+/*CSS Background memiliki beberapa property yaitu:
+	1. background-color 	= untuk memberi warna pada background
+	2. background-image 	= mengatur gambar yang akan digunakan untuk background
+	3. background-position 	= mengatur posisi gambar pada background
+	4. background-repeat 	= mengatur jenis pengulangan gambar pada background */
+
+
+/*BACKGROUND-COLOR*/
+/*Untuk memberi warna pada background, ketenteuannya sama dengan memberi warna pada font-style pada materi sebelumnya.
+Yaitu bisa dengan nama warna, hexadesimal dan kombinasi rgb*/
+
+
+/*BACKGROUND-IMAGE*/
+/*Cara menambahkan image sebagai background adalah dengan memberikan value url(source image). 
+Sebagai referensi untuk mendapatkan gambar gambar sebagai bahan untuk dijadikan background web silahkan kunjungi
+link yang sudah disertakan pada wep page ini*/
+
+
+/*BACKGROUND-REPEAT*/
+/*Secara default ketika kita menampilkan sebuah background di web menggunakan image. secara otomatis background
+kita akan ditampilkan berulang ulang secara horizontal (x) maupun secara vertikal (y) agar tampilan web kita dipenuhi
+oleh gambar background. Jika kita ingin mengatur perulangan image background agar tidak mengulang terhadap sumbu x 
+maupun sumbu y, kita bisa menggunakan background-repeat. background-repeat memiliki 3 buah value yaitu:
+	1. repeat-x 	= mengulang gambar secara horizontal (sumbu x)
+	2. repeat-y 	= mengulang gambar secara vertikal (sumbu-y)
+	3. no-repeat 	= menghentikan pengulangan gambar*/
+
+
+/*BACKGROUND-POSITION*/
+/*background-position secara garis besar bisa memposisikan gambar dengan 2 cara. Yaitu dengan menggeser terhadap
+sumbu x dan terhadap sumbu y. berikut adalah value nya:
+	1. terhadap sumbu x (horizontal) 	= left / center / right
+	2. terhadap sumbu y (vertikal) 		= top / center / bottom
+keenam buah value diatas digunakan dengan cara mengkombinasikan mereka. seperti : top left, top center, bottom right, dll*/
+
+	h1{
+		font-weight: bold;
+		color: Blue;
+	}
+
+
+	p{
+		color: Black;
+		font-weight: bold;
+	}
+
+
+	/*Cara menampilkan Background*/
+
+	body{
+		background-color: LightBlue;
+		background-image: url(Gambar/tree.jpeg);
+		background-repeat: no-repeat;
+		background-position: top center;
+		
+	}
+
+
+	/*Keempat property diatas sebenarnya bisa ditulis dengan singkat dengan format shorthand seperti berikut
+
+	body{
+		background: color url(.....) position repeat;  			   	   ==>> ini formatnya
+		background: Blue url(Gambar/tree.jpeg left bottom no-repeat;   ==>> ini contoh penulisan syntaxnya
+	}
+
+
+	*/
