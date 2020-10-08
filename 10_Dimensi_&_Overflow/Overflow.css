@@ -1,0 +1,39 @@
+/*Pada suatu ketika, ketika kita menghadapi suatu kondisi dimana suatu elemen keluar dari parentnnya. Untuk memperjelas
+perhatikan syntax css dibawah ini dan lihatlah tampilannya pada web browser*/
+
+.div1{
+	background-color: LightBlue;
+	width: 200px;
+	height: 70px;
+}
+/*terlihat pada browser bahwa isi konten melebihi dimensi kotak display, karena kita mengatur dimensi kotak display
+dengan ukuran yang absolute (pixel). untuk mengatasi masalah ini, kita akan menggunakan Overflow
+
+OVERFLOW
+pada overflow terdapat 4 value yaitu:
+	1. visible (default) = jika ada konten yang keluar dari parentnnya, maka konten itu akan diperlihatkan
+	2. auto 			 = CSS akan otomatis menambahkan scroll jika konten melebihi parent
+	3. hidden 
+	4. scroll*/
+
+/*AUTO*/
+/*Kita akan coba menggunakan overflow auto pada elemen div dengan class div2*/
+
+.div2{
+	background-color: Yellow;
+	width: 200px;
+	height: 70px;
+	overflow: auto;
+}
+/*Lihatlah hasilnya pada brwoser. Akan muncul scroll
+
+
+/*HIDDEN*/
+/*Jika kita menggunakan value hidden, maka konten yang keluar dari parenntnya akan di hidden atau disembunyikan.
+silahkan dicoba untuk mengganti value overflow menjadi hidden. Lalu lihatlah hasilnya pada brwser
+
+
+SCROLL
+menggunakan scroll hampir sama dengan auto. Hanya saja bedanya, jika menggunakan scroll, scroll akan tetap ada
+meskipun konten tidak keluar dari parentnya. sedangkan pada auto, scroll akan hilang jika konten tidak keluar
+dari parentnya*/

@@ -1,0 +1,51 @@
+/*PSEUDO CLASS*/
+/*Definisi pseudo class adalah class semu yang dimiliki oleh elemen html, yang membuat kita dapat mendefinisikan 
+style pada keadaan tertentu dari elemen tersebut*/
+
+/*Pseudo class itu ada beberapa tipe. yaitu :
+
+	1. Pseudo class yang berhubungan dengan link
+		jika anda pernah melihat dan memperhatikan style link pada sebuah web, untuk pertama kalinya, anda 
+		akan melihat style color(warna) dari link tersebut secara default akan berwarna biru, lalu ketika kursor
+		kita arahkan ke link, style link akan berubah. Begitu seterusnya ketika kita klik dan terakhir link akan 
+		berwarna ungu, menandakan bahwa link tersebut pernah di klik. Untuk membuat efek style link yang berubah
+		ubah seperti itulah digunakan pseudo class. Adapun prosesnya terbagi menjadi 4 yaitu:
+			a. :link 	= style default pada sebuah link (a yang memiliki href)
+			b. :hover	= style ketika kursor diarahkan ke sebuah link / elemen
+			c. :active 	= style ketika sebuah link di klik (active)
+			d. :visited = style ketika sebuah link sudah pernah dikunjungi menggunakan browser yang sama
+		berikut adalah cara penulisan syntax pseudo class*/
+
+
+/*PERHATIKAN LINK "Selamat siang"*/
+
+/*PSEUDO CLASS " :LINK "*/
+.judul:link {
+	color: Green
+}
+
+/*Cara penulisan pseudo class adalah :
+	.judul 	= nama class. didahului dengan titik
+	:link 	= salah satu proses pseudo class*/
+
+
+/*PSEUDO CLASS " :HOVER "*/
+.judul:hover {
+	color: Brown;
+	font-size: 20px;
+}
+
+
+/*PSEUDO CLASS " :ACTIVE "*/
+.judul:active {
+	color:Pink;
+}
+
+
+/*PSEUDO CLASS " :VISITED: */
+.judul:visited {
+	color: Yellow;
+}
+
+/*Itulah cara menggunakan pseudo class yang pertama, yaitu pseudo class yang berhubungan dengan link
+untuk pseudo class yang kedua akan dibahas pada file web page Pseudo_Class_2.html & css*/

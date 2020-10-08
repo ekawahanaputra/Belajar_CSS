@@ -1,0 +1,83 @@
+/*NEGATIF MARGIN*/
+.satu{
+	background-color: Orange;
+	width: 400px;
+	height: 200px;
+	margin-bottom: 30px;
+}
+
+.dua{
+	background-color: Lightblue;
+	width: 200px;
+	height: 100px;
+	margin-top: -50px;
+}
+
+.tiga{
+	background-color: Lightgreen;
+	width: 100px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Lihatlah penggunaan negatif margin pada div dua. dan lihat 
+style efeknya pada web browser*/
+
+
+/*AUTO MARGIN*/
+/*auto margin hanya dapat digunakan untuk margin right dan margin left saja
+untuk penulisan dan penggunaannya bisa dilihat pada div tiga. Dan 
+kedua duanya (margin right dan margin left) harus ditulis. Auto 
+margin akan membuat box elemen otomatis berada di tengah browser*/
+
+
+
+
+/*SHORTHAND*/
+/*metode penulisan margin juga dapat dilakukan dengan metoda shorthand
+seperti dibawah ini :*/
+
+.empat{
+	background-color: Red;
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+}
+/*shorthand pada div empat diatas menggunakan 1 value. Itu artinya
+semua margin (top, button, right, left) akan diberi ukuran 50px(sama semua)*/
+
+
+.lima{
+	background-color: Black;
+	width: 100px;
+	height:100px;
+	margin: 50px 100px;
+}
+/*shorthand pada div lima diatas menggunakan 2 buah value. value
+yang pertama, akan mengatur top dan botton dengan nilai sama (50px)
+sedangkan value yang kedua akan mengatur right left dengan nilai
+yang sama juga (100px). Untuk value kedua bisa juga menggunakan auto
+jika ingin menampilkan elemen di tengah browser*/
+
+
+.enam{
+	background-color:Purple;
+	width: 50px;
+	height:50px;
+	margin: 50px auto 30px;
+}
+/*shorthand pada div enam menggunakan 3 buah value. Value yang pertama
+adalah nilai top, value kedua adalah nlai right & left dengan nilai
+yang sama (auto). Dan value yang ketiga adalah nilai dari bottom*/
+
+
+.tujuh{
+	background-color:Pink;
+	width: 150px;
+	height:150px;
+	margin: 50px 20px 30px 60px;
+}
+/*shorthand pada div tujuh menggunakan 4 buah value. Value yang pertama
+dimulai dari nilai top, kemudian value yang kedua, ketiga, dan keempat
+adalah searah jarum jam dari nilai top (right, bottom, left)*/

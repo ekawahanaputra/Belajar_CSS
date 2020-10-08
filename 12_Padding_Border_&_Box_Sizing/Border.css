@@ -1,0 +1,62 @@
+/*BORDER*/
+/*Untuk penulisan border agak berbeda dengan materi box model seblumnya.
+untuk cara penulisan pertama, border memiliki 3 nilai value yang harus diberikan yaitu:
+	1. tebal border (dalam pixel)
+
+	2. jenis border(style)
+		untuk style ada beberapa macam. Yaitu:
+		a. solid
+		b. dotted
+		c. dashed
+		d. double
+
+	3. warna border
+untuk penulisannya, lihatlah syntax dibawah ini !*/
+
+.satu{
+	width: 400px;
+	height: 400px;
+	background-color: Orange;
+	margin: 50px auto;
+	padding: 40px;
+
+	border: 50px solid Blue;
+}
+
+/*Cara penulisan border kedua adalah menuliskannya satu persatu seperti dibawah ini.*/
+
+.dua{
+	width: 400px;
+	height: 400px;
+	background-color: Lightblue;
+	margin: auto;
+	padding: 40px;
+
+	border-width: 20px;
+	border-style: double;
+	border-color: Black;
+}
+
+/*Jika suatu ketika kita ingin memberi border yang berbeda beda untuk setiap sisinya,
+kita bisa menggunakan syntax dibawah ini!*/
+
+.tiga{
+	width: 400px;
+	height: 400px;
+	background-color: Lightblue;
+	margin: auto;
+	padding: 40px;
+
+	border-top: 20px solid Black;
+	border-right: 20px double Black;
+	border-left: 20px double Blue;
+	border-bottom: 10px solid Black;
+}
+
+/*NOTE*/
+/*Border juga akan mempengaruhi / menambah ukuran dari box / elemen*/
+
+/*Karena border dan padding dapat mempengaruhi / menambah ukuran dari box / elemen
+yang kita buat, Maka kita akan menghadapi kendala. Yaitu kita harus mengatur ulang
+ukuran kita secara manual. Untuk mencegah hal tersebut, kita akan menggunakan BOX SIZING
+yang akan dibahas pada Box_Sizing.html dan Box_Sizing.css*/

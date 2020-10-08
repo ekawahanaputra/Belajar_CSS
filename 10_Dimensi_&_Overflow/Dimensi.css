@@ -1,0 +1,13 @@
+/*Seperti sebelumnya yang kita telah pelajari tentang display, kali ini kita akan belajar tentang dimensi. Dimensi
+secara sederhana hanya terdiri dari lebar (width) dan tinggi (height) seperti syntax dibawah ini yang mengatur tinggi
+dan lebar dari tag div pada Dimensi.html*/
+div{
+	background-color: LightBlue;
+	width: 200px;
+	height: 200px;
+}
+
+/*untuk mengatur dimensi, pada CSS memiliki beberapa satuan yaitu :
+	1. px (pixel) 				= satuan yang absolut dan nilainya pasti
+	2. % (persentase) 			= satuannya bersifat relatif terhadap elemen pembungkusnya (parentnya)
+	3. in, cm, mm, pt, pc 		= */

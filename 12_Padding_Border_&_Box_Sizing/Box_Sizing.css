@@ -1,0 +1,23 @@
+/*BOX SIZING*/
+/*Berfungsi agar ukuran box dan elemen yang kita buat tidak berubah ubah 
+walaupun kita menambahkan padding dan border. Penggunaannya lihat syntax dibawah ini!*/
+
+div{
+	width: 300px;
+	margin: 20px auto;
+	box-sizing: border-box;
+}
+
+.satu{
+	background-color: Lightblue;
+	padding: 40px;
+	border:20px dashed Orange;
+}
+
+.dua{
+	background-color: Lightgreen;
+	padding: 50px;
+	border: 30px double Black;
+}
+
+/*Penulisan syntax box sizing terdapat pada line 8 dengan value border-box*/

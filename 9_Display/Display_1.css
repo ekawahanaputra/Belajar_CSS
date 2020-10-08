@@ -1,0 +1,17 @@
+.judul {
+	background-color: LightBlue;
+}
+
+.link {
+	background-color: Brown;
+}
+
+.isi {
+	background-color: Red;
+}
+
+
+/*Lihatlah hasilnya pada web browser ketika membuat html dengan menggunakan tag div dan tag span , kemudian
+kita menggunakan css untuk mengatur stylenya. Tente akan terasa lebih mudah*/
+
+/*Untuk lebih lengkapnya tentang display, lihatlah pada Display_2.html dan css*/

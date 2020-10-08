@@ -1,0 +1,101 @@
+/*Hubungan antara tag div , tag span dengan display adalah keduanya sama sama memiliki property display default.
+Untuk tag div ==>>  display defaultnya adalah block
+
+	div {
+		display:block;
+	}
+
+untuk tag span ==>> display defaultnya adalah inline
+
+	span {
+		display:inline;
+	}
+
+setiap elemen html (tag html) sebenarnya berada didalam sebuah kotak imajiner(tidak terlihat). Property display 
+pada pada CSS lah yang mengatur perilaku dari kotak tersebut. Setiap tag html memiliki property display secara
+default meski kita tidak menuliskannya pada CSS. Namun, property display pada semua tag html dapat kita rubah
+sesuai keinginan kita dengan merubah value display nya. Value dari display ada 4 yaitu :
+	1. inline
+	2. inline-block
+	3. block
+	4. none
+
+
+1. INLINE
+	- merupakan elemen html yang secara default tidak menambahkan baris baru saat dibuat
+	- besar dan tinggi elemennya sebesar konten yang ada didalamnya
+	- tinggi dn lebar elemen inline tidak bisa diatur
+	- margin dan padding hanya mempengaruhi elemen secara horizontal. Tidak vertikal (akan dipelajari pada 
+	  materi selanjutnya. berikut adalah elemen elemen html yang value display defaultnya adalah inline. Yaitu:
+	  b, strong, i, em, a, span, sub, sup, button, input, label, select, area, textarea*/
+
+	/*Mari kita lihat pada elemen a (class "navigasi") pada Display_2.html. Kita berikan warna background pada elemen a dan lihatlah
+	hasilnya pada web browser. Disana kita akan lihat bagaimana prilaku kotak inline pada elemen tersebut*/
+	.navigasi a{
+		background-color: Yellow;
+	}
+
+	/*Namun ada satu elemen html yang display defaultnya inline tetapi tinggi dan lebarnya bisa diatur. Elemen 
+	tersebut adalah elemen image*/
+	.artikel img {
+		background-color: Yellow;
+		width: 200px;
+		height: 200px;
+	}
+
+	/*Jika suatu ketika kita ingin mengubah agar width dan height pada elemen a bisa diatur, kita dapat menggunakan
+	value display yang kedua yaitu inline-block
+
+
+2. INLINE-BLOCK
+	- tidak ada elemen html yang memiliki property default dengan value inline-block
+	- maka dari itu kita harus rubah secara manual value dari property display tersebut
+	- prilaku dasarnya sama seperti elemen inline
+	- perbedaannya, elemen inline-block ini dapat kita atur tinggi maupun lebarnya
+
+	Mari kita lihat pada elemen a (class "navigasi2") pada Display_2.html. Kita akan rubah value display defaultnya
+	menjadi inline-block, dan kita atur tinggi dan lebarnya. Lalu lihatlah perbedaan antara a (class "navigasi")
+	dan a (class "navigasi2")*/
+	.navigasi2 a{
+		display: inline-block;
+		background-color: Yellow;
+		width: 100px;
+		height:100px;
+	}
+
+
+/*
+3. BLOCK
+	- elemen html secara default menambahkan baris baru ketika dibuat
+	- jika lebarnya tidak diatur, maka lebar defaultunya akan memenuhi lebar dari browsernya atau parentnya
+	- dan tentunya kita dapat mengatur lebar dan tinggi dari elemen block
+	- didalam elemen block kita dapat menyimpan tag html dengan elemen inline, elemen inline-block, bahkan elemen
+	  block lagi
+	- beberapa contoh tag html yang secara default menggunakan elemen block adalah : h1 - h6, p, form, ol, ul, li
+	  div, hr, dll
+
+   Marilah kita lihat elemen h1, h3 pada Display_2.html. dimana kita akana memberi background color.
+   dan lihatlah hasilnya pada web browser.*/
+   h1, h3{
+   	background-color: LightBlue;
+   }
+
+   /*Lalu kita lihat div dengan class artikel, yang didalamnya terdapat img, h2, dan p. Dan kita berikan background, 
+   width, dan height */
+
+   .artikel{
+   	background-color: Purple;
+   	width: 500px;
+   	height: 500px;
+   }
+
+   /*Lalu kita coba berikan background color pada h2 (artikel)*/
+   .artikel h2{
+   	background-color: Pink;
+   }
+   /*Lihatlah background color h2 akan memenuhi background coler .artikel*/
+
+
+ /*NONE
+ 	Value display yang terakhir adalah none. Berfungsi untuk menghilangkan sebuah elemen. Jika value display
+ 	nya kita rubah menjadi none maka elemen html tersebut akan hilang pada halaman web*/

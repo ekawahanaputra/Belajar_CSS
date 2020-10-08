@@ -1,0 +1,54 @@
+/*Yang akan dipelajari pada materi kali ini adalah:
+	1. Cara pakai Margin
+	2. Overlapping margin
+	3. negatif margin
+	4. auto
+	5. shorthand
+
+pada Margin.html, kita memiliki 3 buah div dengan class masing-masing.
+dan akan kita berikan style seperti berikut:*/
+
+.satu{
+	width: 200px;
+	height: 200px;
+	background-color: Lightblue;
+	margin-left: 300px;
+	margin-top: 30px;
+	margin-right: 200px;
+	margin-bottom: 50px;
+}
+
+.dua{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: Lightgreen;
+	margin-top: 100px;
+	margin-right: 20px;
+}
+
+.tiga{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: Violet;
+	margin-left: 20px;
+}
+
+/*CARA PEMAKAIAN MARGI*/
+/*Untuk cara memakai margin, lihatlah pada line 15 sampai line 18
+dan lihat efeknya pada browser*/
+
+
+/*OVERLAPPING MARGIN*/
+/*ketika margin bottom div satu dibuat 50px, dan margin top div dua
+dibuat 100px, maka secara logika jarak antar kedua div satu dan div
+dua menjadi 50px + 100px = 150px. Namun yang terjadi adalah jarak
+antar kedua div (div satu dan div dua) menjadi 100px. Dengan efek
+seperti itu, dapat disimpulkan bahwa jarak antar dua objeck yang 
+dibatasi oleh margin, marginnya tidak ditambah melainkan akan dipakai
+salah satu margin yang paling besar. Namun ini hanya berlaku secara
+VERTIKAL saja. Sedangkan untuk yang HORIZONTAL kedua marginnya akan
+saling mnambahkan*/
+
+/*Untuk NEGATIF MARGIN, lihatlah file Margin_2.html & Margin_2.css*/

@@ -1,0 +1,25 @@
+/*PSEUDO CLASS EPS. 3*/
+/*Ketika kita ingin merubah style dengan menargetkan sebuah paragraf tertentu dari beberapa paragraft, kita tidak bisa
+menggunakan pseudo class pada eps.1 maupun eps.2. Karena paragraft(p) bukan lah child dari sebuah elemen layaknya
+li pada ul dan ol. Untuk paragraft, kita bisa menggunakan pseudo class dibawah ini :*/
+
+/*1. :first-of-type 	= memilih elemen pertama dari sebuah jenis/tipe tag
+  2. :last-of-type 		= memilih elemen terakhir dari sebuah jenis/tipe tag. 
+
+ Untuk cara penulisan syntaxnya adalah sebagai berikut :*/
+
+ 
+/*:FIRST-OF-TYPE*/
+
+ p:first-of-type{
+ 	color: Blue;
+ }
+
+
+/*:LAST-OF-TYPE*/
+
+p:last-of-type{
+	color: Red;
+}
+
+/*Sebenarnya masih banyak lagi pseudo class yang lain. Maka dari itu akan dibahas pada materi yang akan datang*/

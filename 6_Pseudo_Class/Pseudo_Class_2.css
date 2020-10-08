@@ -1,0 +1,61 @@
+/*Pseudo Class yang kedua adalah pseudo class yang berhubungan dengan posisi atau urutan dari sebuah elemen. Pseudo class
+ini memiliki 3 macam tipe. Yaitu:
+	1. :first-child 	: memilih elemen pertama dari sebuah parent atau elemen pembungkusnya
+	2. :last-child 		: memilih elemen terakhir dari sebuah parent atau elemen pembungkusnya
+	3. :nth-child 		: memilih elemen ke -n dari sebuah elemen parent atau elemen pembungkusnya
+yang perlu diperhatikan pada pseudo class ini adalah dia akan aktif apabila suatu elemen merupakan child atau anak dari
+elemen yang diberi pseudo class. Sebagai contoh, lihatlah file Pseudo_Class_2.html. Pada file tersebut terdapat
+elemen ul (Unordered List) dimana elemen ul memiliki child (anak) yaitu elemen li dengan jumlah 10 dan elemen li juga
+memiliki child yaitu elemen a sebanyak masing masing satu*/
+
+/*Perhatikan contoh penggunaannya pada syntax berikut :*/
+
+
+/* :FIRST-CHILD */
+li:first-child a{
+	color: Brown;
+}
+/*syntax diatas memiliki maksud, elemen li yang merupakan anak pertama (first-child) pada bagian a*/
+
+
+/* :LAST-CHILD */
+li:last-child a{
+	color: Green;
+	font-weight: bold;
+}
+
+
+/* :NTH-CHILD */
+li:nth-child(2) a{
+	color: Red;
+	font-weight: bold;
+}
+/*khusus untuk :nth-child kita harus memasukan parameter. Untuk parameter, bisa memasukan nomer urutannya langsung
+atau bisa juga kelipatan seperti dibawah: */
+li:nth-child(3n) a{
+	color: Black;
+	font-style: italic;
+}
+/*Nah dalam suatu waktu, kita ingin membuat sebuah kelipatan yang dimulai dari nomer tertentu contoh seperti dibawah ini
+saya ingin membuat kelipatan 2 yang dimulai dari nomer 1 dengan style text decoration line-through*/
+li:nth-child(2n-1) a{
+	text-decoration: line-through;
+}
+/*Maksud dari 2n-1 adalah : 2n -->> kelipatan 2
+							-1 -->> karena kelipatan ingin dimulai dari nomer urut 1, maka kelipatan 2 dikurangi 1*/
+
+/*selain parameter diatas, pada :nth-child juga bisa digunakan parameter "even" untuk memberi style pada urutan 
+genap dan "odd" untuk memberi style pada urutan negatif. Lihat contoh dibawah ini:
+
+li:nt-child(even) a{
+	
+}
+
+&&&
+
+li:nth-child(odd) a{
+	
+}
+Note : Pseudo class pada episode 2 ini, juga bisa dikombinasikan dengan penggunaan pseudo class pada episode 1*/
+
+/*Untuk pseudo class yang lain, anda bisa lihat pada file Pseudo_Class_3.html dan css*/

@@ -1,0 +1,40 @@
+/*Box Model terdiri dari 4 komponen yaitu :
+	1. Margin 	= area transparan di sekitar kotak di luar border (sudah dibahas di materi sebelumnya)
+	2. Padding 	= area transparan didalam kotak antara kontent dan border
+	3. Border 	= Batas disekeliling kontent dan border
+	3. Kontent 	= konten sebenarnya di dalam box (berupa gambar dan teks*/
+
+
+/*PADDING*/
+/*cara penulisan syntax padding adalah sama dengan cara penulisan 
+syntax margin yaitu :
+padding left = ...px
+padding right = ... px
+padding top = ...px
+padding bottom = ...px
+untuk contohnya bisa dilihat dibawah ini*/
+
+	div {
+		width: 400px;
+		height: 400px;
+		background-color: coral;
+		margin: 50px auto;
+
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+	}
+
+/*Setelah syntax padding ditambahkan, lihatlah hasilnya pada browser*/
+
+
+/*Catatan penting untuk padding*/
+/*Secara umum penggunaan syntax padding biasa dan padding shorthand adalah sama dengan penggunaan syntax margi
+perbedaannya adalah :
+	1. padding tidak bisa diberi nilai negatif seperti margin
+	2. padding tidak memiliki parameter nilai auto*/
+
+/*Padding akan mempengaruhi/menambah ukuran elemen. Jika kita membuat box dengan ukuran tertentu,
+kemudian kita berikan padding dengan ukuran tertentu, maka secara otomatis, ukuran box juga akan 
+bertambah*/

@@ -1,0 +1,12 @@
+div{
+	background-color: Blue;
+	width: 200px;
+	height: 200px;
+}
+
+/*Secara default, jika kita lihat hasil dari syntax diatas pada browser,
+maka pada box akan terlihat ada jarak antara box dan batas browser. Itu karena 
+css sudah mengatur margin default pada browser. Meskipun kita mengatur margin menjadi 0,
+jarak akan tetap ada. Agar kita bisa mengendalikan secara penuh landscape browser sesuai keinginan kita, 
+maka kita harus melakukan reset dengan beberapa syntax reset sebelum menuliskan
+ syntax css. Adapun syntax reset untuk css akan di bahas pada Reset_2.html dan Reset_2.css*/
