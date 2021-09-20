@@ -1,0 +1,50 @@
+/*Z-INDEX*/
+/*Z-INDEX adalah property yang dapat membantu kita untuk mengatur tumpukan elemen yang memiliki position non
+static (relative, fixed, maupun absolute). Misalkan contoh :*/
+
+div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+}
+
+.merah{
+	background-color: Red;
+	z-index: 3;
+
+}
+
+.kuning{
+	background-color: Yellow;
+	margin-top: 100px;
+	margin-left: 100px;
+	z-index: 5;
+}
+
+.hijau{
+	background-color: Green;
+	margin-top: 200px;
+	margin-left: 200px;
+	z-index: -1;
+}
+
+/*PENJELASAN*/
+/*Diatas kita memiliki tiga buah kotak masing masing warna merah, kuning, hijau. Jika semua kotak kita beri
+position non static (absolute)>> lihat line 8. Maka yang akan terlihat pada browser adalah kotak warna hijau.
+Karena kotak merah dan kuning tertumpuk dibawah kotak hijau. Sudah menjadi hukum defaultnya bahwa kotak yang
+syntax nya tertulis paling akhir, ketika diberi position non static akan tertumpuk diposisi paling atas.
+
+agar kita dapat mengatur susunan tumpukan kotak sesuai kehendak kita tanpa harus memindahkan baris syntax 
+sebuah elemen, maka kita menggunakan property z-index. Untuk nilai valu dari z-index adalah angka (bisa berupa
+positif dan bisa juga negative). Aturannya, semakin besar angka dari z-index, maka semakin diatas posisi
+sebuah elemen dengan acuan koordinat z. 
+
+sebagai contoh lihatlah line 13, line 21, dan line 28. Masing masing kotak saya beri z-index dengan nilai
+sebagai berikut :
+	1. kotak merah = 3
+	2. kotak kuning = 5
+	3. kotak hijau = -1
+
+dari semua value / nilai dari z-index kotak diatas, maka kotak kuning akan berada di tumpukan paling atas
+karena kotak kuning memiliki nilai z-index paling besar. Dan kotak hijau akan ada pada tumpukan paling bawah.
+Karena kotak hijau memiliki z-index yang terkecil.*/

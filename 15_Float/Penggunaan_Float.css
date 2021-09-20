@@ -1,0 +1,96 @@
+/*COntoh yang bisa dilakukan dengan float adalah:
+	1. Text Wrapping 		= membuat teks mengelilingi gambar / elemen lain
+	2. Image Galery 		= membuat serangkaian gambar menjadi galery
+	3. Multi-Column Layout 	= membuat halaman web memiliki lebih dari satu kolom*/
+
+
+/*TEXT WRAPPING*/
+.container_1{
+	width: 1000px;
+	height: 400px;
+	background-color: LightBlue;
+	margin: auto;
+}
+
+.container_1 img{
+	width: 300px;
+	float: left;
+}
+
+/*Lihatlah line 17, penggunaan float akan mengakibatkan pargraft / tulisan
+akan mengelilingi image*/
+
+
+
+/*IMAGE GALERY*/
+.container_2{
+	width: 1000px;
+	height: 400px;
+	background-color: LimeGreen;
+	margin: auto;
+}
+
+.container_2 div{
+	width: 100px;
+	height: 100px;
+	background-color: Pink;
+	color: Black;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+	line-height: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+/*Note*/
+/*line 41 ==>> line-height = 100px berfungsi untuk mengatur posisi
+angka / tulisan di dalam kotak / elemen div agar ditengah tengah. 
+line height harus diatur sama dengan height dari elemen div. Dan text
+allign diatur menjadi value*/
+
+/*Lihatlah line 42. Nilai float = left, akan membuat kotak berurutan
+dari kiri ke kanan. dan begitu juga berlaku sebaliknya ketika nilai
+float di buat right*/
+
+
+/*MULTI-COLUMN LAYOUT*/
+
+.container_3{
+	width: 1000px;
+	height: 400px;
+	background-color: Yellow;
+	margin: auto;
+}
+
+.judul_3{
+	width: 1000px;
+	height: 50px;
+	margin: auto;
+}
+
+.container_3 .kolom_1{
+	width: 300px;
+	height: 400px;
+	background-color: Pink;
+	float: left;
+}
+
+.container_3 .kolom_2{
+	width: 350px;
+	height: 400px;
+	background-color: Orange;
+	float: left;
+}
+
+.container_3 .kolom_3{
+	width: 350px;
+	height: 400px;
+	background-color: Brown;
+	float: left;
+}
+
+/*Lihatlah line 76, line 83, line 90, itu merupakan nilai float
+untuk membuat multi-column. Yang perlu diperhatikan ketika membuat
+multi-line column adalah memperhatikan panjang (width) dari multi
+column dengan panjang (width) parent nya*/

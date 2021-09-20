@@ -1,0 +1,62 @@
+/*FLOAT*/
+/*Merupakan property pada css untuk mengatur posisi sebuah elemen
+dengan menggunakan FLOAT, sebuah elemen dapat dipaksa untuk
+berada di sebelah kiri atau kanan dari parentnya / elemen 
+pembungkusnya. Property float memiliki 3 buah value (nilai), yaitu :
+	1. none (default)
+	2. left
+	3. right
+
+Sebelum mengenal cara penggunaan float, kita juga harus mengenal 2 
+buah prinsip yaitu :
+	1. normal flow
+	2. out-of flow
+
+NORMAL FLOW
+	selama pembelajaan html dan css sebelumnya sampai pada materi
+	kali ini, kita hanya mengenal normal flow. Yaitu apabila kita
+	membuat sebuah elemen html, maka secara otomatis elemen berikutnya
+	akan di buat secara vertikal dibawah elemen sebelumnya
+
+OUT-OF FLOW
+	sedangkan out-of flow adalah meletakan elemen html disebelah kanan
+	atau disebelah kiri dari elemen sebelumnya (HORIZONTAL). Disinilah
+	fungsi dan kegunaan dari FLOAT
+
+
+Cara Penggunaan FLoat*/
+
+.container{
+	width: 800px;
+	height: 500px;
+	background-color: Grey;
+	margin: auto;
+}
+
+.satu, .dua, .tiga{
+	width: 100px;
+	height: 100px;
+}
+
+.satu{
+	background-color: Red;
+}
+
+.dua{
+	background-color: Yellow;
+}
+
+.tiga{
+	background-color: Green;
+	float: right;
+}
+
+/*Cara penggunaan float bisa dilihat pada line 51, atau kotak tiga
+dan lihatlah browser, kotak tiga yang warna hijau akan ada di sebelah 
+kanan dari elemen parentnya / pembungkusnya. Dalam hal ini yang 
+bertindak sebagai elemen parent / pembungkus dari kotak satu, dua,
+dan tiga adalah container (warna abu abu).*/
+
+/*Kapan harus menggunakan float ?
+float dapat digunakan untuk beberapa hal. Lihatlah materi berikutnya
+penggunaan_float.html dan .css nya*/
